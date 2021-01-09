@@ -1,0 +1,30 @@
+{
+	"languageserver": {
+		"amxx": {
+			"module": "/mnt/c/apps/amxxpawn-language/build/server/server.js",
+			"args": ["--node-ipc"],
+			"filetypes": ["pawn"],
+			"trace.server": "verbose",
+			//"rootPatterns": ["root.yml"],
+			//"execArgv": ["--nolazy", "--inspect-brk=6045"],
+			"initializationOptions": {
+				"amxxpawn": { 
+					"compiler": {
+						"executablePath": "/mnt/c/rehlds-sr/cstrike/addons/amxmodx/amxxpc",
+						"outputType": "path",
+						"outputPath": "/mnt/c/rehlds-sr/cstrike/addons/amxmodx/plugins",
+						"includePaths": [
+							"/mnt/c/rehlds-sr/cstrike/addons/amxmodx/scripting/include"
+						]
+					},
+					"language": {
+						"reparseInterval": 1500
+					}
+				},
+				"settings": {
+				}
+
+			}
+		}
+	}
+}
